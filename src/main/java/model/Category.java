@@ -14,6 +14,12 @@ public class Category {
     @Column(unique = false)
     private String category;
 
+    public Category(){}
+
+    public Category(String category){
+        this.category= category;
+    }
+
     public Integer getId() {
         return id;
     }

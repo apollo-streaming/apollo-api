@@ -27,6 +27,12 @@ public class Artist implements Serializable {
     @Column(unique = false, nullable = false)
     private String bio;
 
+    public Artist(){}
+
+    public Artist(String bio){
+        this.bio = bio;
+    }
+
     public Integer getId() {
         return id;
     }

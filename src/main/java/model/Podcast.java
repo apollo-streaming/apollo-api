@@ -28,6 +28,15 @@ public class Podcast {
 
     @Column(unique = false)
     private String banner;
+
+    public Podcast(){}
+
+    public Podcast(String title,String description, String banner){
+        this.title = title;
+        this.description = description;
+        this.banner = banner;
+    }
+
     public Integer getId() {
         return id;
     }
