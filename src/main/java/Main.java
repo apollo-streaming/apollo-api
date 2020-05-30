@@ -1,5 +1,6 @@
 import controller.Episode;
 import controller.Podcast;
+import controller.User;
 import utils.Hibernate;
 
 public class Main {
@@ -7,5 +8,6 @@ public class Main {
         Hibernate.getSessionFactory();
         Podcast.routes();
         Episode.routes();
+        User.routes();
     }
 }
