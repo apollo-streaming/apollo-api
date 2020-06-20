@@ -8,6 +8,7 @@ public class EpisodeViewModel {
     private Integer views;
     private Integer likes;
     private String banner;
+    private String link;
     private Integer podcast_id;
 
     public EpisodeViewModel(Episode episode) {
@@ -18,8 +19,17 @@ public class EpisodeViewModel {
         this.views = episode.getViews();
         this.likes = episode.getLikes();
         this.banner = episode.getBanner();
+        this.link = episode.getLink();
     }
 
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
     public Integer getId() {
         return id;
     }

@@ -30,6 +30,18 @@ public class Episode {
 
     @Column(unique = false)
     private String banner;
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    @Column(unique = false, nullable = false)
+    private String link;
+
     public Integer getId() {
         return id;
     }
