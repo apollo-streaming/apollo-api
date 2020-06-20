@@ -17,5 +17,6 @@
         <mapping class="model.Podcast"/>
         <mapping class="model.Category"/>
         <mapping class="model.History"/>
+        <mapping class="model.PlaylistItem"/>
     </session-factory>
 </hibernate-configuration>
