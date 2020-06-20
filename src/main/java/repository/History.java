@@ -67,7 +67,7 @@ public class History {
     public static model.History create(HistoryViewModel HistoryInput) throws Exception {
         Session session = Hibernate.getSessionFactory().openSession();
 
-        model.History history = new model.History(HistoryInput);
+        model.History history = new model.History();
         model.User user = User.byId(HistoryInput.getUser_id());
         model.Episode episode = Episode.byId(HistoryInput.getEpisode_id());
         if (user.getId() == null || episode.getId() == null) {
