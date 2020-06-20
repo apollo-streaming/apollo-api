@@ -30,6 +30,17 @@ public class Podcast implements Serializable {
     @Column(unique = false, nullable = false)
     private String name;
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    @Column(unique = false, nullable = false)
+    private String image;
+
     public Podcast() {
     }
 
