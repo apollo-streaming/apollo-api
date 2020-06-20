@@ -7,11 +7,13 @@ public class PodcastViewModel {
     private Integer id;
     private String name;
     private Integer user_id;
+    private String image;
     private List<EpisodeViewModel> episodes;
 
     public PodcastViewModel(Podcast podcast) {
         this.id = podcast.getId();
         this.name = podcast.getName();
+        this.image = podcast.getImage();
         this.episodes = new ArrayList<>();
         this.user_id = podcast.getUser().getId();
         for (model.Episode episode : podcast.getEpisodes()) {
@@ -19,6 +21,13 @@ public class PodcastViewModel {
         }
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
     public Integer getId() {
         return id;
     }
